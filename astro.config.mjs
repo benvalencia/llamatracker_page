@@ -4,5 +4,4 @@ const LIVE_URL = 'https://www.llamatracker.net';
 // https://astro.build/config
 export default defineConfig({
    site: LIVE_URL,
-  base: '/llamatrakcer_page'
 });
