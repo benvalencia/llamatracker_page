@@ -1,0 +1,74 @@
+---
+import Iphone from "../components/Iphone.astro";
+interface Props {
+  title: string;
+  body: string;
+  href: string;
+}
+
+const {href, title, body} = Astro.props;
+---
+
+<div class="download">
+    <div class="download-container">
+            <h3><span class="text-gradient">Everywhere you go</span></h3>
+    </div>
+    <div class="download-container">
+        <div class="download-container-button">
+            <img src="/img/appstore.png"
+                 alt="Download apple app"
+                 width="200"
+            >
+        </div>
+        <div class="download-container-button">
+            <h4>Or</h4>
+        </div>
+        <div class="download-container-button">
+            <img src="/img/googleplay.png"
+                 alt="Download googleplay app"
+                 width="200"
+            ></div>
+    </div>
+</div>
+
+<style>
+    .download {
+        padding-top: 5rem;
+        padding-bottom: 7rem;
+    }
+
+    .download-container {
+        display: flex;
+        gap: 50px;
+        justify-content: center;
+    }
+
+    .download-container-button {
+        display: flex;
+        align-items: center;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        line-height: 1;
+        text-align: center;
+        margin: 3rem;
+    }
+
+    h4 {
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 1;
+        text-align: center;
+        margin: 0;
+    }
+
+    .text-gradient {
+        background-image: var(--accent-gradient);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 400%;
+        background-position: 0%;
+    }
+</style>
