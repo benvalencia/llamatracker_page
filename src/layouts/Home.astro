@@ -1,5 +1,6 @@
 ---
 import Iphone from "../components/Iphone.astro";
+import IphoneBorder from "../components/IphoneBorder.astro";
 interface Props {
     // image: string;
     // width: number;
@@ -11,97 +12,37 @@ const {
     // image, width, height, hover
 } = Astro.props;
 ---
-
-<div class="home">
-    <div class="home-container">
-        <div class="home-container-main">
-            <div class="home-container-text">
-                <h2>Get more with</h2>
-                <h1><span class="text-gradient">Llamatracker</span></h1>
+<div class="pt-20 pb-20	max-w-screen-xl mx-auto md:p-4 overflow-hidden	">
+    <div class="w-full z-10 md:top-20 md:relative">
+        <div class="home-container-text text-center">
+            <h2 class="text-5xl font-bold	leading-none m-0">Get more with</h2>
+            <h1 class="text-6xl font-bold	leading-none m-0"><span class="text-gradient">Llamatracker</span></h1>
+        </div>
+    </div>
+    <div class="flex flex-wrap justify-between">
+        <div class="flex items-center md:flex-row-reverse">
+            <div class="-rotate-12 w-72">
+                <IphoneBorder section="home" size="s"></IphoneBorder>
+            </div>
+            <div class="home-container-text text-center	z-10 md:-right-8 relative right-3">
+                <h4 class="text-3xl font-bold	leading-none m-0">In your hand</h4>
+                <h3 class="text-4xl font-bold	leading-none m-0"><span class="text-gradient">Stats & Tools</span></h3>
             </div>
         </div>
-
-        <div class="home-container-secondary">
-            <div class="home-container-text">
-                <h4>In your hand</h4>
-                <h3><span class="text-gradient">Stats & Tools</span></h3>
+        <div class="flex items-center md:flex-row-reverse">
+            <div class="home-container-text text-center	z-10 md:-left-8 relative left-3">
+                <h4 class="text-3xl font-bold	leading-none m-0">Keep updated</h4>
+                <h3 class="text-4xl font-bold	leading-none m-0"><span class="text-gradient">News & Shop</span></h3>
             </div>
-            <div class="home-container-text">
-                <h4>Keep updated</h4>
-                <h3><span class="text-gradient">News & Shop</span></h3>
+            <div class="rotate-12 w-72">
+                <IphoneBorder section="shop" size="s"></IphoneBorder>
             </div>
-        </div>
-
-        <div class="home-container-tertiary">
-                <Iphone section="home" size="xl"/>
+            
         </div>
     </div>
 </div>
 
 <style>
-    .home {
-        height: 100vh;
-        overflow: hidden;
-    }
-    .home-container {
-    }
-
-    .home-container-text {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .home-container-main {
-        margin-top: 9rem;
-        margin-bottom: 3rem;
-    }
-
-    .home-container-secondary {
-        width: 100%;
-        height: 40rem;
-        display: flex;
-        align-content: center;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .home-container-tertiary {
-        display: flex;
-        position: relative;
-        top: -52rem;
-        justify-content: center;
-    }
-
-    h1 {
-        font-size: 5rem;
-        font-weight: 700;
-        line-height: 1;
-        text-align: center;
-        margin: 0;
-    }
-    h2 {
-        font-size: 4.5rem;
-        font-weight: 700;
-        line-height: 1;
-        text-align: center;
-        margin: 0;
-    }
-
-    h3 {
-        font-size: 2.5rem;
-        font-weight: 700;
-        line-height: 1;
-        text-align: center;
-        margin: 0;
-    }
-    h4 {
-        font-size: 2rem;
-        font-weight: 700;
-        line-height: 1;
-        text-align: center;
-        margin: 0;
-    }
-
     .text-gradient {
         background-image: var(--accent-gradient);
         -webkit-background-clip: text;
