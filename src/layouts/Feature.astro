@@ -1,5 +1,8 @@
 ---
 import Iphone from "../components/Iphone.astro";
+import FeatureRight from "../components/FeatureRight.astro";
+import FeatureLeft from "../components/FeatureLeft.astro";
+import FeatureDescription from "../components/FeatureDescription.astro";
 interface Props {
 	// title: string;
 	// body: string;
@@ -12,45 +15,18 @@ const {
 ---
 
 <div class="feature">
-	<div class="feature-container-content">
-		<div class="feature-container-content-description">
-			<div class="feature-container-content-description-title">
-				Keep your progress on track
-			</div>
-			<div class="feature-container-content-description-subtitle">
-				with stats you can search for your fortnite profile and have a look of your stats
-			</div>
-
-			<div class="feature-container-content-description-actions">
-				<div class="feature-container-content-description-actions-track">
-					<div>image</div>
-					<div>
-						description of track
-					</div>
-				</div>
-				<div class="feature-container-content-description-actions-analize">
-					<div>image</div>
-					<div>
-						description of analize
-					</div>				</div>
-				<div class="feature-container-content-description-actions-improve">
-					<div>image</div>
-					<div>
-						description of improve
-					</div>
-				</div>
-			</div>
-
-		</div>
-		<div class="feature-container-content-image">
-			<Iphone size="m" section="stats"/>
-			<Iphone size="s" section="stats-detail"/>
-		</div>
+	<div>
+		<FeatureDescription></FeatureDescription>
+	</div>
+	<div>
+		<FeatureRight></FeatureRight>
+		<FeatureLeft></FeatureLeft>
+	</div>
+	<div>
+		<FeatureRight></FeatureRight>
+		<FeatureLeft></FeatureLeft>
 	</div>
 </div>
 
 <style>
-	.feature-container-content-image {
-		display: flex;
-	}
 </style>
