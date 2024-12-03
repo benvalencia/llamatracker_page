@@ -1,7 +1,7 @@
 ---
 interface Props {
 	section: 'home' | 'stats' | 'stats-detail' | 'news' | 'news-detail' | 'shop' | 'shop-detail' | 'tools' | 'user-profile';
-	size: 's' | 'm' | 'l' | 'xl';
+	size: 'xs' | 's' | 'm' | 'l' | 'xl';
 }
 
 const { 
@@ -9,7 +9,9 @@ const {
 } = Astro.props;
 ---
 
-<div class="relative md:w-72 h-[448px] md:h-[600px] rounded-[25px] md:rounded-[45px] shadow-[0_0_2px_2px_rgba(255,255,255,0.1)] border-4 md:border-8 border-zinc-900 ml-1">
+<div class="relative md:w-72 h-[448px] md:h-[600px] rounded-[25px] md:rounded-[45px] shadow-[0_0_2px_2px_rgba(255,255,255,0.1)] border-4 md:border-8 border-zinc-900 ml-1"
+		 class:list={[`${size == 'xs' ? 'md:h-[567px]' : null }`]}
+>
 	<!-- Dynamic Island -->
 	<div class="absolute top-2 left-1/2 transform -translate-x-1/2 w-[65px] md:w-[90px] h-[16px] md:h-[22px] bg-zinc-900 rounded-full z-20 hidden md:block">
 	</div>
@@ -91,16 +93,16 @@ const {
 		background-image: url('/public/img/screens/home_screen.png');
 	}
 	.section-news{
-		background-image: url('/public/img/screens/home_screen.png');
+		background-image: url('/public/img/screens/news_screen.png');
 	}
 	.section-news-detail{
-		background-image: url('/public/img/screens/home_screen.png');
+		background-image: url('/public/img/screens/news-detail_screen.png');
 	}
 	.section-shop{
 		background-image: url('/public/img/screens/shop_screen.png');
 	}
 	.section-shop-detail{
-		background-image: url('/public/img/screens/home_screen.png');
+		background-image: url('/public/img/screens/shop-detail_screen.png');
 	}
 	.section-tools{
 		background-image: url('/public/img/screens/home_screen.png');

@@ -9,15 +9,28 @@ const {
 ---
 
 <div class="feature">
+		<div class="mx-auto max-w-5xl lg:text-center flex flex-col justify-center items-center pt-24 pb-24">
+			<h1 class="lg:text-7xl text-4xl md:text-5xl font-bold tracking-tight text-center">
+				<span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-700 via-blue-800 to-gray-900">Level Up with</span>
+				<span class="text-transparent text-gradient bg-clip-text bg-gradient-to-r from-blue-700 via-blue-800 to-gray-900">LLamatracker</span>
+			</h1>
+			<p class="mt-6 text-md text-gray-500 max-w-lg text-center">
+				Get to the next level with these features.
+			</p>
+		</div>
 	<div>
-		<FeatureRight></FeatureRight>
-		<FeatureLeft></FeatureLeft>
-	</div>
-	<div>
-		<FeatureRight></FeatureRight>
-		<FeatureLeft></FeatureLeft>
+		<FeatureRight feature="home" secondaryFeature="stats" section="1"></FeatureRight>
+		<FeatureLeft feature="shop" secondaryFeature="shop-detail" section="2"></FeatureLeft>
+		<FeatureRight feature="news" secondaryFeature="news-detail" section="3"></FeatureRight>
 	</div>
 </div>
 
 <style>
+	.text-gradient {
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	}
 </style>

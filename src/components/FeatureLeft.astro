@@ -1,92 +1,274 @@
 ---
 import IphoneBorder from "./IphoneBorder.astro";
-interface Props {}
 
-const { 
+interface Props {
+	feature: string
+	secondaryFeature?: string
+	section?: '1' | '2' | '5' | '4'
+}
+
+const {
+	feature,
+	secondaryFeature,
+	section
 } = Astro.props;
 ---
 
 <section class="">
 	<div class="container max-w-xl p-6 mx-auto space-y-12 lg:px-8 lg:max-w-7xl">
-		<!--<div>-->
-		<!--	<h2 class="text-3xl font-bold text-center sm:text-5xl">New Features</h2>-->
-		<!--	<p class="max-w-3xl mx-auto mt-4 text-xl text-center ">Explore the latest features that enhance your learning experience and make it even more exciting.</p>-->
-		<!--</div>-->
 		<div class="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
 			<div>
-				<div class="mt-4 space-y-12">
-					<div class="flex">
-						<div class="flex-shrink-0">
-							<div class="flex items-center justify-center w-12 h-12 rounded-md">
-								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-										 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-										 class="lucide lucide-rocket">
-									<path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z">
-									</path>
-									<path
-										d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z">
-									</path>
-									<path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path>
-									<path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
-								</svg></div>
+				{section === '1'
+					? <div class="mt-4 space-y-12">
+						<div class="flex">
+							<div class="flex-shrink-0">
+								<div class="flex items-center justify-center w-12 h-12 rounded-md text-white">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 512"
+											 width="35" height="35"
+											 fill="white"
+									><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M220.6 130.3l-67.2 28.2V43.2L98.7 233.5l54.7-24.2v130.3l67.2-209.3zm-83.2-96.7l-1.3 4.7-15.2 52.9C80.6 106.7 52 145.8 52 191.5c0 52.3 34.3 95.9 83.4 105.5v53.6C57.5 340.1 0 272.4 0 191.6c0-80.5 59.8-147.2 137.4-158zm311.4 447.2c-11.2 11.2-23.1 12.3-28.6 10.5-5.4-1.8-27.1-19.9-60.4-44.4-33.3-24.6-33.6-35.7-43-56.7-9.4-20.9-30.4-42.6-57.5-52.4l-9.7-14.7c-24.7 16.9-53 26.9-81.3 28.7l2.1-6.6 15.9-49.5c46.5-11.9 80.9-54 80.9-104.2 0-54.5-38.4-102.1-96-107.1V32.3C254.4 37.4 320 106.8 320 191.6c0 33.6-11.2 64.7-29 90.4l14.6 9.6c9.8 27.1 31.5 48 52.4 57.4s32.2 9.7 56.8 43c24.6 33.2 42.7 54.9 44.5 60.3s.7 17.3-10.5 28.5zm-9.9-17.9c0-4.4-3.6-8-8-8s-8 3.6-8 8 3.6 8 8 8 8-3.6 8-8z"/></svg>
+								</div>
+							</div>
+							<div class="ml-4">
+								<h4 class="text-lg font-medium leadi">Search for Fortnite profiles</h4>
+								<p class="mt-2 text-md text-gray-500 max-w-lg">
+									You can find all the public profile on Fortnite,
+									Even if the account is an xbox, PS or EpicGame.
+								</p>
+							</div>
 						</div>
-						<div class="ml-4">
-							<h4 class="text-lg font-medium leadi ">Advanced Learning Algorithms</h4>
-							<p class="mt-2 ">Discover our improved learning algorithms that adapt to your preferences and provide even more personalized learning suggestions.</p>
+						<div class="flex">
+							<div class="flex-shrink-0">
+								<div class="flex items-center justify-center w-12 h-12 rounded-md text-white">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+											 width="25" height="25"
+											 fill="white"
+									><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9L0 168c0 13.3 10.7 24 24 24l110.1 0c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24l0 104c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65 0-94.1c0-13.3-10.7-24-24-24z"/></svg>
+								</div>
+							</div>
+							<div class="ml-4">
+								<h4 class="text-lg font-medium leadi">Keep your recent search</h4>
+								<p class="mt-2 text-md text-gray-500 max-w-lg">
+									You can keep close your 5 recent searches that
+									you made through the use of Llamatracker.
+								</p>
+							</div>
 						</div>
-					</div>
-					<div class="flex">
-						<div class="flex-shrink-0">
-							<div class="flex items-center justify-center w-12 h-12 rounded-md">
-								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-										 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-										 class="lucide lucide-bookmark-plus">
-									<path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"></path>
-									<line x1="12" x2="12" y1="7" y2="13"></line>
-									<line x1="15" x2="9" y1="10" y2="10"></line>
-								</svg></div>
-						</div>
-						<div class="ml-4">
-							<h4 class="text-lg font-medium leadi ">Interactive Learning Resources</h4>
-							<p class="mt-2 ">Access an extensive library of interactive resources that make your learning journey engaging and interactive.</p>
-						</div>
-					</div>
-					<div class="flex">
-						<div class="flex-shrink-0">
-							<div class="flex items-center justify-center w-12 h-12 rounded-md">
-								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-										 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-										 class="lucide lucide-video">
-									<path d="m22 8-6 4 6 4V8Z"></path>
-									<rect width="14" height="12" x="2" y="6" rx="2" ry="2"></rect>
-								</svg></div>
-						</div>
-						<div class="ml-4">
-							<h4 class="text-lg font-medium leadi ">Enhanced Video Streaming</h4>
-							<p class="mt-2 ">Experience seamless video integration with enhanced streaming capabilities, providing a better and more uninterrupted learning experience.</p>
-						</div>
-					</div>
-					<div class="flex">
-						<div class="flex-shrink-0">
-							<div class="flex items-center justify-center w-12 h-12 rounded-md">
-								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-										 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-										 class="lucide lucide-file-question">
-									<path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path>
-									<path d="M10 10.3c.2-.4.5-.8.9-1a2.1 2.1 0 0 1 2.6.4c.3.4.5.8.5 1.3 0 1.3-2 2-2 2"></path>
-									<path d="M12 17h.01"></path>
-								</svg></div>
-						</div>
-						<div class="ml-4">
-							<h4 class="text-lg font-medium leadi ">Advanced Quiz Generation </h4>
-							<p class="mt-2 ">Take your knowledge testing to the next level with advanced quiz generation, providing more customization options for your quizzes.</p>
+						<div class="flex">
+							<div class="flex-shrink-0">
+								<div class="flex items-center justify-center w-12 h-12 rounded-md text-white">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+											 width="25" height="25"
+											 fill="white"
+									><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M64 64c0-17.7-14.3-32-32-32S0 46.3 0 64L0 400c0 44.2 35.8 80 80 80l400 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 416c-8.8 0-16-7.2-16-16L64 64zm406.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L320 210.7l-57.4-57.4c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L240 221.3l57.4 57.4c12.5 12.5 32.8 12.5 45.3 0l128-128z"/></svg>
+
+									<!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"-->
+									<!--		 width="35" height="35"-->
+									<!--		 fill="white"-->
+									<!--&gt;&lt;!&ndash;!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.&ndash;&gt;<path d="M352 124.5l-51.9-13c-6.5-1.6-11.3-7.1-12-13.8s2.8-13.1 8.7-16.1l40.8-20.4L294.4 28.8c-5.5-4.1-7.8-11.3-5.6-17.9S297.1 0 304 0L416 0l32 0 16 0c30.2 0 58.7 14.2 76.8 38.4l57.6 76.8c6.2 8.3 9.6 18.4 9.6 28.8c0 26.5-21.5 48-48 48l-21.5 0c-17 0-33.3-6.7-45.3-18.7L480 160l-32 0 0 21.5c0 24.8 12.8 47.9 33.8 61.1l106.6 66.6c32.1 20.1 51.6 55.2 51.6 93.1C640 462.9 590.9 512 530.2 512L496 512l-64 0L32.3 512c-3.3 0-6.6-.4-9.6-1.4C13.5 507.8 6 501 2.4 492.1C1 488.7 .2 485.2 0 481.4c-.2-3.7 .3-7.3 1.3-10.7c2.8-9.2 9.6-16.7 18.6-20.4c3-1.2 6.2-2 9.5-2.2L433.3 412c8.3-.7 14.7-7.7 14.7-16.1c0-4.3-1.7-8.4-4.7-11.4l-44.4-44.4c-30-30-46.9-70.7-46.9-113.1l0-45.5 0-57zM512 72.3c0-.1 0-.2 0-.3s0-.2 0-.3l0 .6zm-1.3 7.4L464.3 68.1c-.2 1.3-.3 2.6-.3 3.9c0 13.3 10.7 24 24 24c10.6 0 19.5-6.8 22.7-16.3zM130.9 116.5c16.3-14.5 40.4-16.2 58.5-4.1l130.6 87 0 27.5c0 32.8 8.4 64.8 24 93l-232 0c-6.7 0-12.7-4.2-15-10.4s-.5-13.3 4.6-17.7L171 232.3 18.4 255.8c-7 1.1-13.9-2.6-16.9-9s-1.5-14.1 3.8-18.8L130.9 116.5z"/></svg>-->
+								</div>
+							</div>
+							<div class="ml-4">
+								<h4 class="text-lg font-medium leadi">Analyze profiles</h4>
+								<p class="mt-2 text-md text-gray-500 max-w-lg">
+									Track players' progress and analyze their stacks, WIN, KDA, K/M and more.
+								</p>
+							</div>
 						</div>
 					</div>
-				</div>
+					: null
+				}
+				{section === '2'
+					? <div class="mt-4 space-y-12">
+						<div class="flex">
+							<div class="flex-shrink-0">
+								<div class="flex items-center justify-center w-12 h-12 rounded-md text-white">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"
+											 width="35" height="35"
+											 fill="white"
+									><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M547.6 103.8L490.3 13.1C485.2 5 476.1 0 466.4 0L109.6 0C99.9 0 90.8 5 85.7 13.1L28.3 103.8c-29.6 46.8-3.4 111.9 51.9 119.4c4 .5 8.1 .8 12.1 .8c26.1 0 49.3-11.4 65.2-29c15.9 17.6 39.1 29 65.2 29c26.1 0 49.3-11.4 65.2-29c15.9 17.6 39.1 29 65.2 29c26.2 0 49.3-11.4 65.2-29c16 17.6 39.1 29 65.2 29c4.1 0 8.1-.3 12.1-.8c55.5-7.4 81.8-72.5 52.1-119.4zM499.7 254.9c0 0 0 0-.1 0c-5.3 .7-10.7 1.1-16.2 1.1c-12.4 0-24.3-1.9-35.4-5.3L448 384l-320 0 0-133.4c-11.2 3.5-23.2 5.4-35.6 5.4c-5.5 0-11-.4-16.3-1.1l-.1 0c-4.1-.6-8.1-1.3-12-2.3L64 384l0 64c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-64 0-131.4c-4 1-8 1.8-12.3 2.3z"/></svg>
+								</div>
+							</div>
+							<div class="ml-4">
+								<h4 class="text-lg font-medium leadi">Realtime Daily Shop</h4>
+								<p class="mt-2 text-md text-gray-500 max-w-lg">
+									Fresh as everyday, the shop get updated each day with new items.
+								</p>
+							</div>
+						</div>
+						<div class="flex">
+							<div class="flex-shrink-0">
+								<div class="flex items-center justify-center w-12 h-12 rounded-md text-white">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+											 width="25" height="25"
+											 fill="white"
+									><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M464 6.1c9.5-8.5 24-8.1 33 .9l8 8c9 9 9.4 23.5 .9 33l-85.8 95.9c-2.6 2.9-4.1 6.7-4.1 10.7l0 21.4c0 8.8-7.2 16-16 16l-15.8 0c-4.6 0-8.9 1.9-11.9 5.3L100.7 500.9C94.3 508 85.3 512 75.8 512c-8.8 0-17.3-3.5-23.5-9.8L9.7 459.7C3.5 453.4 0 445 0 436.2c0-9.5 4-18.5 11.1-24.8l111.6-99.8c3.4-3 5.3-7.4 5.3-11.9l0-27.6c0-8.8 7.2-16 16-16l34.6 0c3.9 0 7.7-1.5 10.7-4.1L464 6.1zM432 288c3.6 0 6.7 2.4 7.7 5.8l14.8 51.7 51.7 14.8c3.4 1 5.8 4.1 5.8 7.7s-2.4 6.7-5.8 7.7l-51.7 14.8-14.8 51.7c-1 3.4-4.1 5.8-7.7 5.8s-6.7-2.4-7.7-5.8l-14.8-51.7-51.7-14.8c-3.4-1-5.8-4.1-5.8-7.7s2.4-6.7 5.8-7.7l51.7-14.8 14.8-51.7c1-3.4 4.1-5.8 7.7-5.8zM87.7 69.8l14.8 51.7 51.7 14.8c3.4 1 5.8 4.1 5.8 7.7s-2.4 6.7-5.8 7.7l-51.7 14.8L87.7 218.2c-1 3.4-4.1 5.8-7.7 5.8s-6.7-2.4-7.7-5.8L57.5 166.5 5.8 151.7c-3.4-1-5.8-4.1-5.8-7.7s2.4-6.7 5.8-7.7l51.7-14.8L72.3 69.8c1-3.4 4.1-5.8 7.7-5.8s6.7 2.4 7.7 5.8zM208 0c3.7 0 6.9 2.5 7.8 6.1l6.8 27.3 27.3 6.8c3.6 .9 6.1 4.1 6.1 7.8s-2.5 6.9-6.1 7.8l-27.3 6.8-6.8 27.3c-.9 3.6-4.1 6.1-7.8 6.1s-6.9-2.5-7.8-6.1l-6.8-27.3-27.3-6.8c-3.6-.9-6.1-4.1-6.1-7.8s2.5-6.9 6.1-7.8l27.3-6.8 6.8-27.3c.9-3.6 4.1-6.1 7.8-6.1z"/></svg>
+								</div>
+							</div>
+							<div class="ml-4">
+								<h4 class="text-lg font-medium leadi">Detail item's information</h4>
+								<p class="mt-2 text-md text-gray-500 max-w-lg">
+									You can see all today's items details, what it includes,
+									item type, how much it costs and more.
+								</p>
+							</div>
+						</div>
+						<div class="flex">
+							<div class="flex-shrink-0">
+								<div class="flex items-center justify-center w-12 h-12 rounded-md text-white">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+											 width="25" height="25"
+											 fill="white"
+									><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M176 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l16 0 0 34.4C92.3 113.8 16 200 16 304c0 114.9 93.1 208 208 208s208-93.1 208-208c0-41.8-12.3-80.7-33.5-113.2l24.1-24.1c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L355.7 143c-28.1-23-62.2-38.8-99.7-44.6L256 64l16 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L224 0 176 0zm72 192l0 128c0 13.3-10.7 24-24 24s-24-10.7-24-24l0-128c0-13.3 10.7-24 24-24s24 10.7 24 24z"/></svg>
+								</div>
+							</div>
+							<div class="ml-4">
+								<h4 class="text-lg font-medium leadi">Know when it leaves</h4>
+								<p class="mt-2 text-md text-gray-500 max-w-lg">
+									Track items when it was released and when it leaves the daily shop and
+									never get out without your favorite item.
+								</p>
+							</div>
+						</div>
+					</div>
+					: null
+				}
+				{section === '3'
+					? <div class="mt-4 space-y-12">
+						<div class="flex">
+							<div class="flex-shrink-0">
+								<div class="flex items-center justify-center w-12 h-12 rounded-md text-white">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 512"
+											 width="35" height="35"
+											 fill="white"
+									><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M220.6 130.3l-67.2 28.2V43.2L98.7 233.5l54.7-24.2v130.3l67.2-209.3zm-83.2-96.7l-1.3 4.7-15.2 52.9C80.6 106.7 52 145.8 52 191.5c0 52.3 34.3 95.9 83.4 105.5v53.6C57.5 340.1 0 272.4 0 191.6c0-80.5 59.8-147.2 137.4-158zm311.4 447.2c-11.2 11.2-23.1 12.3-28.6 10.5-5.4-1.8-27.1-19.9-60.4-44.4-33.3-24.6-33.6-35.7-43-56.7-9.4-20.9-30.4-42.6-57.5-52.4l-9.7-14.7c-24.7 16.9-53 26.9-81.3 28.7l2.1-6.6 15.9-49.5c46.5-11.9 80.9-54 80.9-104.2 0-54.5-38.4-102.1-96-107.1V32.3C254.4 37.4 320 106.8 320 191.6c0 33.6-11.2 64.7-29 90.4l14.6 9.6c9.8 27.1 31.5 48 52.4 57.4s32.2 9.7 56.8 43c24.6 33.2 42.7 54.9 44.5 60.3s.7 17.3-10.5 28.5zm-9.9-17.9c0-4.4-3.6-8-8-8s-8 3.6-8 8 3.6 8 8 8 8-3.6 8-8z"/></svg>
+								</div>
+							</div>
+							<div class="ml-4">
+								<h4 class="text-lg font-medium leadi">Search for Fortnite profiles</h4>
+								<p class="mt-2 text-md text-gray-500 max-w-lg">
+									You can find all the public profile on Fortnite,
+									Even if the account is an xbox, PS or EpicGame.
+								</p>
+							</div>
+						</div>
+						<div class="flex">
+							<div class="flex-shrink-0">
+								<div class="flex items-center justify-center w-12 h-12 rounded-md text-white">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+											 width="25" height="25"
+											 fill="white"
+									><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9L0 168c0 13.3 10.7 24 24 24l110.1 0c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24l0 104c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65 0-94.1c0-13.3-10.7-24-24-24z"/></svg>
+								</div>
+							</div>
+							<div class="ml-4">
+								<h4 class="text-lg font-medium leadi">Keep your recent search</h4>
+								<p class="mt-2 text-md text-gray-500 max-w-lg">
+									You can keep close your 5 recent searches that
+									you made through the use of Llamatracker.
+								</p>
+							</div>
+						</div>
+						<div class="flex">
+							<div class="flex-shrink-0">
+								<div class="flex items-center justify-center w-12 h-12 rounded-md text-white">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+											 width="25" height="25"
+											 fill="white"
+									><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M64 64c0-17.7-14.3-32-32-32S0 46.3 0 64L0 400c0 44.2 35.8 80 80 80l400 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 416c-8.8 0-16-7.2-16-16L64 64zm406.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L320 210.7l-57.4-57.4c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L240 221.3l57.4 57.4c12.5 12.5 32.8 12.5 45.3 0l128-128z"/></svg>
+
+									<!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"-->
+									<!--		 width="35" height="35"-->
+									<!--		 fill="white"-->
+									<!--&gt;&lt;!&ndash;!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.&ndash;&gt;<path d="M352 124.5l-51.9-13c-6.5-1.6-11.3-7.1-12-13.8s2.8-13.1 8.7-16.1l40.8-20.4L294.4 28.8c-5.5-4.1-7.8-11.3-5.6-17.9S297.1 0 304 0L416 0l32 0 16 0c30.2 0 58.7 14.2 76.8 38.4l57.6 76.8c6.2 8.3 9.6 18.4 9.6 28.8c0 26.5-21.5 48-48 48l-21.5 0c-17 0-33.3-6.7-45.3-18.7L480 160l-32 0 0 21.5c0 24.8 12.8 47.9 33.8 61.1l106.6 66.6c32.1 20.1 51.6 55.2 51.6 93.1C640 462.9 590.9 512 530.2 512L496 512l-64 0L32.3 512c-3.3 0-6.6-.4-9.6-1.4C13.5 507.8 6 501 2.4 492.1C1 488.7 .2 485.2 0 481.4c-.2-3.7 .3-7.3 1.3-10.7c2.8-9.2 9.6-16.7 18.6-20.4c3-1.2 6.2-2 9.5-2.2L433.3 412c8.3-.7 14.7-7.7 14.7-16.1c0-4.3-1.7-8.4-4.7-11.4l-44.4-44.4c-30-30-46.9-70.7-46.9-113.1l0-45.5 0-57zM512 72.3c0-.1 0-.2 0-.3s0-.2 0-.3l0 .6zm-1.3 7.4L464.3 68.1c-.2 1.3-.3 2.6-.3 3.9c0 13.3 10.7 24 24 24c10.6 0 19.5-6.8 22.7-16.3zM130.9 116.5c16.3-14.5 40.4-16.2 58.5-4.1l130.6 87 0 27.5c0 32.8 8.4 64.8 24 93l-232 0c-6.7 0-12.7-4.2-15-10.4s-.5-13.3 4.6-17.7L171 232.3 18.4 255.8c-7 1.1-13.9-2.6-16.9-9s-1.5-14.1 3.8-18.8L130.9 116.5z"/></svg>-->
+								</div>
+							</div>
+							<div class="ml-4">
+								<h4 class="text-lg font-medium leadi">Analyze profiles</h4>
+								<p class="mt-2 text-md text-gray-500 max-w-lg">
+									Track players' progress and analyze their stacks, WIN, KDA, K/M and more.
+								</p>
+							</div>
+						</div>
+					</div>
+					: null
+				}
+				{section === '4'
+					? <div class="mt-4 space-y-12">
+						<div class="flex">
+							<div class="flex-shrink-0">
+								<div class="flex items-center justify-center w-12 h-12 rounded-md text-white">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 512"
+											 width="35" height="35"
+											 fill="white"
+									><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M220.6 130.3l-67.2 28.2V43.2L98.7 233.5l54.7-24.2v130.3l67.2-209.3zm-83.2-96.7l-1.3 4.7-15.2 52.9C80.6 106.7 52 145.8 52 191.5c0 52.3 34.3 95.9 83.4 105.5v53.6C57.5 340.1 0 272.4 0 191.6c0-80.5 59.8-147.2 137.4-158zm311.4 447.2c-11.2 11.2-23.1 12.3-28.6 10.5-5.4-1.8-27.1-19.9-60.4-44.4-33.3-24.6-33.6-35.7-43-56.7-9.4-20.9-30.4-42.6-57.5-52.4l-9.7-14.7c-24.7 16.9-53 26.9-81.3 28.7l2.1-6.6 15.9-49.5c46.5-11.9 80.9-54 80.9-104.2 0-54.5-38.4-102.1-96-107.1V32.3C254.4 37.4 320 106.8 320 191.6c0 33.6-11.2 64.7-29 90.4l14.6 9.6c9.8 27.1 31.5 48 52.4 57.4s32.2 9.7 56.8 43c24.6 33.2 42.7 54.9 44.5 60.3s.7 17.3-10.5 28.5zm-9.9-17.9c0-4.4-3.6-8-8-8s-8 3.6-8 8 3.6 8 8 8 8-3.6 8-8z"/></svg>
+								</div>
+							</div>
+							<div class="ml-4">
+								<h4 class="text-lg font-medium leadi">Search for Fortnite profiles</h4>
+								<p class="mt-2 text-md text-gray-500 max-w-lg">
+									You can find all the public profile on Fortnite,
+									Even if the account is an xbox, PS or EpicGame.
+								</p>
+							</div>
+						</div>
+						<div class="flex">
+							<div class="flex-shrink-0">
+								<div class="flex items-center justify-center w-12 h-12 rounded-md text-white">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+											 width="25" height="25"
+											 fill="white"
+									><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9L0 168c0 13.3 10.7 24 24 24l110.1 0c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24l0 104c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65 0-94.1c0-13.3-10.7-24-24-24z"/></svg>
+								</div>
+							</div>
+							<div class="ml-4">
+								<h4 class="text-lg font-medium leadi">Keep your recent search</h4>
+								<p class="mt-2 text-md text-gray-500 max-w-lg">
+									You can keep close your 5 recent searches that
+									you made through the use of Llamatracker.
+								</p>
+							</div>
+						</div>
+						<div class="flex">
+							<div class="flex-shrink-0">
+								<div class="flex items-center justify-center w-12 h-12 rounded-md text-white">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+											 width="25" height="25"
+											 fill="white"
+									><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M64 64c0-17.7-14.3-32-32-32S0 46.3 0 64L0 400c0 44.2 35.8 80 80 80l400 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 416c-8.8 0-16-7.2-16-16L64 64zm406.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L320 210.7l-57.4-57.4c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L240 221.3l57.4 57.4c12.5 12.5 32.8 12.5 45.3 0l128-128z"/></svg>
+
+									<!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"-->
+									<!--		 width="35" height="35"-->
+									<!--		 fill="white"-->
+									<!--&gt;&lt;!&ndash;!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.&ndash;&gt;<path d="M352 124.5l-51.9-13c-6.5-1.6-11.3-7.1-12-13.8s2.8-13.1 8.7-16.1l40.8-20.4L294.4 28.8c-5.5-4.1-7.8-11.3-5.6-17.9S297.1 0 304 0L416 0l32 0 16 0c30.2 0 58.7 14.2 76.8 38.4l57.6 76.8c6.2 8.3 9.6 18.4 9.6 28.8c0 26.5-21.5 48-48 48l-21.5 0c-17 0-33.3-6.7-45.3-18.7L480 160l-32 0 0 21.5c0 24.8 12.8 47.9 33.8 61.1l106.6 66.6c32.1 20.1 51.6 55.2 51.6 93.1C640 462.9 590.9 512 530.2 512L496 512l-64 0L32.3 512c-3.3 0-6.6-.4-9.6-1.4C13.5 507.8 6 501 2.4 492.1C1 488.7 .2 485.2 0 481.4c-.2-3.7 .3-7.3 1.3-10.7c2.8-9.2 9.6-16.7 18.6-20.4c3-1.2 6.2-2 9.5-2.2L433.3 412c8.3-.7 14.7-7.7 14.7-16.1c0-4.3-1.7-8.4-4.7-11.4l-44.4-44.4c-30-30-46.9-70.7-46.9-113.1l0-45.5 0-57zM512 72.3c0-.1 0-.2 0-.3s0-.2 0-.3l0 .6zm-1.3 7.4L464.3 68.1c-.2 1.3-.3 2.6-.3 3.9c0 13.3 10.7 24 24 24c10.6 0 19.5-6.8 22.7-16.3zM130.9 116.5c16.3-14.5 40.4-16.2 58.5-4.1l130.6 87 0 27.5c0 32.8 8.4 64.8 24 93l-232 0c-6.7 0-12.7-4.2-15-10.4s-.5-13.3 4.6-17.7L171 232.3 18.4 255.8c-7 1.1-13.9-2.6-16.9-9s-1.5-14.1 3.8-18.8L130.9 116.5z"/></svg>-->
+								</div>
+							</div>
+							<div class="ml-4">
+								<h4 class="text-lg font-medium leadi">Analyze profiles</h4>
+								<p class="mt-2 text-md text-gray-500 max-w-lg">
+									Track players' progress and analyze their stacks, WIN, KDA, K/M and more.
+								</p>
+							</div>
+						</div>
+					</div>
+					: null
+				}
 			</div>
-			<div aria-hidden="true" class="mt-10 lg:mt-0">
-				<IphoneBorder section="home" size="s"></IphoneBorder>
-			</div>
+			{secondaryFeature
+				? <div aria-hidden="true" class="mt-10 lg:mt-0 justify-items-center order-first md:order-last">
+						<div class="flex ">
+							<div class="z-10 -rotate-12 relative left-16">
+								<IphoneBorder section=`${feature}` size="s"></IphoneBorder>
+							</div>
+							<div class="relative rotate-12 -right-16">
+								<IphoneBorder section=`${secondaryFeature}` size="s"></IphoneBorder>
+							</div>
+						</div>
+					</div>
+				: <div aria-hidden="true" class="mt-10 lg:mt-0 justify-items-center">
+						<IphoneBorder section=`${feature}` size="s"></IphoneBorder>
+					</div>
+			}
 		</div>
 	</div>
 </section>
