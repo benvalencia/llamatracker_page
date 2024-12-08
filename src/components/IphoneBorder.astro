@@ -20,9 +20,9 @@ const {
 
 
 	<!-- Screen Content -->
-	<div class="relative w-full h-full  rounded-[22px] md:rounded-[37px] overflow-hidden flex items-center justify-center  bg-zinc-900/10">
+	<div class="relative w-full h-full rounded-[22px] md:rounded-[37px] overflow-hidden flex items-center justify-center  bg-zinc-900/10">
 		<div class="iphone w-full" class:list={['iphone', `iphone-${size}`]}>
-			<div class="h-10 bg-cover w-[218px] md:w-72 h-[467px] md:h-[600px]" class:list={['iphone-14', `section-${section}`]}></div>
+			<div class="h-10 bg-cover w-[218px] md:w-auto h-[467px] md:h-[593px]" class:list={['iphone-14', `section-${section}`]}></div>
 		</div>
 		
 		<div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 h-24 w-12 bg-zinc-600 blur-[60px]">
@@ -78,33 +78,43 @@ const {
 	}
 
 	.section-home{
+		background-size: contain;
 		background-image: url('/img/screens/home_screen.png');
 	}
 	.section-stats{
+		background-size: contain;
 		background-image: url('/public/img/screens/stats_screen.png');
 	}
 	.section-stats-detail{
+		background-size: contain;
 		background-image: url('/public/img/screens/stats-detail_screen.png');
 	}
 	.section-user-profile{
+		background-size: contain;
 		background-image: url('/public/img/screens/home_screen.png');
 	}
 	.section-loading{
+		background-size: contain;
 		background-image: url('/public/img/screens/home_screen.png');
 	}
 	.section-news{
+		background-size: contain;
 		background-image: url('/public/img/screens/news_screen.png');
 	}
 	.section-news-detail{
+		background-size: contain;
 		background-image: url('/public/img/screens/news-detail_screen.png');
 	}
 	.section-shop{
+		background-size: contain;
 		background-image: url('/public/img/screens/shop_screen.png');
 	}
 	.section-shop-detail{
+		background-size: contain;
 		background-image: url('/public/img/screens/shop-detail_screen.png');
 	}
 	.section-tools{
+		background-size: contain;
 		background-image: url('/public/img/screens/home_screen.png');
 	}
 </style>
