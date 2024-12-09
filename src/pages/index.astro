@@ -8,9 +8,13 @@ import Download from "../layouts/Download.astro";
 
 <Layout title="Llamatracker">
 	<main>
+		<div id="home"></div>
 		<Home></Home>
+		<div id="feature"></div>
 		<Feature></Feature>
+		<div id="about"></div>
 		<About></About>
+		<div id="download"></div>
 		<Download appleButton={true}></Download>
 	</main>
 </Layout>
@@ -20,5 +24,8 @@ import Download from "../layouts/Download.astro";
 		color: white;
 		font-size: 20px;
 		line-height: 1.6;
+	}
+	html {
+		scroll-behavior: smooth;
 	}
 </style>
