@@ -1,0 +1,101 @@
+{
+    "nav": {
+        "menu": {
+            "home": "Inicio",
+            "features": "Funcionalidades",
+            "about": "Sobre",
+            "download": "Descargar",
+            "english": "Ingles",
+            "spanish": "Español",
+            "italian": "Italiano",
+            "catalan": "Catalan",
+            "download-app": "Descargar app"
+        }
+    },
+    "home": {
+        "home": {
+            "get-more": "Obten mas con",
+            "in-your-hand": "En tus manos",
+            "stats-tools": "Datos & Recursos",
+            "keep-updated": "Siempre actualizado",
+            "news-shop": "Noticias & Tienda"
+        }
+    },
+    "feature": {
+        "feature": {
+            "level-up": "Al siguiente nivel con",
+            "get-to": "Sube al siguiente nivel con estas funcionalidades.",
+            "search-for": "Buscador de perfiles de Fortnite",
+            "search-for-description": "Puedes encontrar todos los perfiles publicos en Fortnite, aun si la cuenta es de Xbox, de PS, o de EpicGames",
+            "keep-your": "Manten tus buscados recientes",
+            "keep-your-description": "Puedes mantener cerca tus 5 busquedas recientes que hayas hecho durante el uso de Llamatracker",
+            "analyze-profiles": "Analiza perfiles",
+            "analyze-profiles-description": "Trackea el progreso de jugadores y analiza sus estadisticas VICTORIAS, KDA, K/M y mas.",
+            "realtime-daily": "Rotacion diaria de la tienda",
+            "realtime-daily-description": "Fresco como cada dia, la tienda se actualiza cada dia con nuevos items ",
+            "detail-item": "Informacion detallada de los items",
+            "detail-item-description": "Puedes ver todos los detalles de los items de la tienda de hoy, que incluye, su rareza, cuanto cuesta y mas.",
+            "know-when": "Conoces cuando se va un item",
+            "know-when-description": "Trackea los items cuando son lanzados o cuando se van de la tienda y nunca te vayas sin tu favorito.",
+            "official-news": "Noticias oficiales",
+            "official-news-description": "Mantente informado coon las noticias ofiiciales mas reciente del mundo de FORTNITE y sus diferentes modos de juego",
+            "read-the": "Lee las noticias oficiales",
+            "read-the-description": "Elige que leer y mantente informado con las noticias oficiales."
+        }
+    },
+    "about": {
+        "about": {
+            "trusted": "Confian en nosotros alrededor del mundo",
+            "works-everywhere": "Llamatracker funcion en cualquier lugar que vayas",
+            "our-vision-description": "Nuestra vision para hacer una aplicacion eficiente para ayudar a la comunidad de FORTNITE a analizar sus estadisiticas, sin PUBLICIDAD o ningun elemento intrusivo",
+            "in-llamatracker-description": "En Llamatracker, encontraras todo lo que necesitas para ENTENDER tu perfil, el perfil de tus amigos, o buscar el perfil de tu PRO PLAYER favorito",
+            "uptime": "Activo el 99.99%",
+            "uptime-description": "Activo 24/7/360, con 0 tiempo de caida",
+            "users": "Mas de 99k de usuarios",
+            "users-description": "Mas de 99k de usuarios alrededor del mundo confian en Llamatracker",
+            "all-over": "Alrededor de todo el mundo",
+            "all-over-description": "Accede a Llamatracker alrededor de todo el mundo",
+            "realtime": "Rotacion de la tienda en tiempo real",
+            "realtime-description": "Ve la rotacion de la tienda en tiempo real, totalmente actualizada"
+        }
+    },
+    "download": {
+        "download": {
+            "now-available": "Disponible para descargar ahora",
+            "lets-start": "Comencemos y crezcamos juntos"
+        },
+        "apple": {
+            "label": "Descarga en la App Store"
+        },
+        "android": {
+            "label": "Descarga en la tienda de Google Play"
+        }
+    },
+    "footer": {
+        "footer": {
+            "home": "Inicio",
+            "features": "Funcionalidades",
+            "about": "Sobre",
+            "download": "Descarga"
+        },
+        "features": {
+            "features": "Funcionalidades",
+            "search-profile": "Buscador de perfiles",
+            "stats-details": "Estadisticas detalladas",
+            "daily-shop": "Tienda diaria",
+            "official-news": "Noticias oficiales"
+        },
+        "support": {
+            "support": "Soporte",
+            "customer": "Atencion al cliente",
+            "terms-conditions": "Terminos & condiciones",
+            "privacy-policy": "Politicas de privacidad"
+        },
+        "rights": {
+            "rights": "Todos los derechos reservados."
+        },
+        "download": {
+            "download": "Descargalo ahora en las tiendas "
+        }
+    }
+}

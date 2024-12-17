@@ -1,0 +1,101 @@
+{
+    "nav": {
+        "menu": {
+            "home": "Casa",
+            "features": "Funzionalità",
+            "about": "Di",
+            "download": "Scaricamento",
+            "english": "Inglese",
+            "spanish": "Spagnolo",
+            "italian": "Italiano",
+            "catalan": "Catalano",
+            "download-app": "Scarica l'app"
+        }
+    },
+    "home": {
+        "home": {
+            "get-more": "Ottieni di più con",
+            "in-your-hand": "Nelle tue mani",
+            "stats-tools": "Dati & Risorse",
+            "keep-updated": "Sempre aggiornato",
+            "news-shop": "Notizie & Acquisti"
+        }
+    },
+    "feature": {
+        "feature": {
+            "level-up": "Al livello successivo con",
+            "get-to": "Portalo al livello successivo con queste funzionalità.",
+            "search-for": "Ricerca profilo Fortnite",
+            "search-for-description": "Puoi trovare tutti i profili pubblici in Fortnite, anche se l'account proviene da Xbox, PS o EpicGames",
+            "keep-your": "Mantieni aggiornate le tue ricerche recenti",
+            "keep-your-description": "Puoi tenere a portata di mano le tue 5 ricerche recenti mentre usi Llamatracker",
+            "analyze-profiles": "Analizzare i profili",
+            "analyze-profiles-description": "Tieni traccia dei progressi dei giocatori e analizza le loro statistiche: VINCITE, KDA, K/M e altro ancora.",
+            "realtime-daily": "Rotazione giornaliera del negozio",
+            "realtime-daily-description": "Fresco come il giorno, il negozio viene aggiornato quotidianamente con nuovi articoli",
+            "detail-item": "Informazioni dettagliate sugli articoli",
+            "detail-item-description": "Puoi vedere tutti i dettagli degli articoli nel negozio di oggi, inclusa la loro rarità, quanto costano e altro ancora.",
+            "know-when": "Sai quando un oggetto sta per scomparire",
+            "know-when-description": "Tieni traccia degli articoli quando vengono rilasciati o quando lasciano il negozio e non escono mai senza il tuo preferito.",
+            "official-news": "Notizie ufficiali",
+            "official-news-description": "Rimani informato con le ultime notizie ufficiali dal mondo FORTNITE e dalle sue diverse modalità di gioco",
+            "read-the": "Leggi la notizia ufficiale",
+            "read-the-description": "Scegli cosa leggere e rimani informato sulle novità ufficiali."
+        }
+    },
+    "about": {
+        "about": {
+            "trusted": "Hanno fiducia in noi in tutto il mondo",
+            "works-everywhere": "Llamatracker funziona ovunque tu vada",
+            "our-vision-description": "La nostra visione è quella di creare un'app efficiente per aiutare la comunità FORTNITE ad analizzare le proprie statistiche, senza PUBBLICITÀ o elementi intrusivi",
+            "in-llamatracker-description": "In Llamatracker troverai tutto ciò di cui hai bisogno per CAPIRE il tuo profilo, quello dei tuoi amici o cercare il profilo del tuo GIOCATORE PRO preferito",
+            "uptime": "Attivo 99,99%",
+            "uptime-description": "Attivo 24/7/360 giorni all'anno, con 0 tempi di inattività",
+            "users": "Più di 99k utenti",
+            "users-description": "Più di 99.000 utenti in tutto il mondo si affidano a Llamatracker",
+            "all-over": "In tutto il mondo",
+            "all-over-description": "Accedi a Llamatracker in tutto il mondo",
+            "realtime": "Rotazione del negozio in tempo reale",
+            "realtime-description": "Guarda la rotazione dei negozi in tempo reale, completamente aggiornata"
+        }
+    },
+    "download": {
+        "download": {
+            "now-available": "Disponibile per il download ora",
+            "lets-start": "Iniziamo e cresciamo insieme"
+        },
+        "apple": {
+            "label": "Scarica sull'App Store"
+        },
+        "android": {
+            "label": "Scarica da Google Play Store"
+        }
+    },
+    "footer": {
+        "footer": {
+            "home": "Casa",
+            "features": "Funzionalità",
+            "about": "Di",
+            "download": "Scaricamento"
+        },
+        "features": {
+            "features": "Funzionalità",
+            "search-profile": "Ricerca profilo",
+            "stats-details": "Statistiche dettagliate",
+            "daily-shop": "Negozio quotidiano",
+            "official-news": "Notizie ufficiali"
+        },
+        "support": {
+            "support": "Supporto",
+            "customer": "Assistenza clienti",
+            "terms-conditions": "Termini e condizioni",
+            "privacy-policy": "Politiche sulla privacy"
+        },
+        "rights": {
+            "rights": "Tutti i diritti riservati."
+        },
+        "download": {
+            "download": "Scaricalo subito nei negozi"
+        }
+    }
+}

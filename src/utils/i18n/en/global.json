@@ -1,0 +1,101 @@
+{
+    "nav": {
+        "menu": {
+            "home": "Home",
+            "features": "Features",
+            "about": "About",
+            "download": "Download",
+            "english": "English",
+            "spanish": "Spanish",
+            "italian": "Italian",
+            "catalan": "Catalan",
+            "download-app": "Download app"
+        }
+    },
+    "home": {
+        "home": {
+            "get-more": "Get more with",
+            "in-your-hand": "In your hand",
+            "stats-tools": "Stats & Tools",
+            "keep-updated": "Keep updated",
+            "news-shop": "News & Shop"
+        }
+    },
+    "feature": {
+        "feature": {
+            "level-up": "Level Up with",
+            "get-to": "Get to the next level with these features.",
+            "search-for": "Search for Fortnite profiles",
+            "search-for-description": "You can find all the public profile on Fortnite, Even if the account is an Xbox, PS or EpicGames.",
+            "keep-your": "Keep your recent search",
+            "keep-your-description": "You can keep close your 5 recent searches that you made through the use of Llamatracker.",
+            "analyze-profiles": "Analyze profiles",
+            "analyze-profiles-description": "Track players' progress and analyze their stacks, WIN, KDA, K/M and more.",
+            "realtime-daily": "Realtime Daily Shop",
+            "realtime-daily-description": "Fresh as everyday, the shop get updated each day with new items.",
+            "detail-item": "Detail item's information",
+            "detail-item-description": "You can see all today's items details, what it includes, item type, how much it costs and more.",
+            "know-when": "Know when it leaves",
+            "know-when-description": "Track items when it was released and when it leaves the daily shop and never get out without your favorite item.",
+            "official-news": "Official news",
+            "official-news-description": "Stay informed with the recent official news all about FORTNITE and its different games.",
+            "read-the": "Read the official new",
+            "read-the-description": "Chose what to read and stay informed with the official news."
+        }
+    },
+    "about": {
+        "about": {
+            "trusted": "Trusted Worldwide",
+            "works-everywhere": "Llamatracker works everywhere you go",
+            "our-vision-description": "Our vision to make an efficient application to help the FORTNITE community to find and analyze statistics without ADS or any intrusive element.",
+            "in-llamatracker-description": "In Llamatracker, you will find all you need to COMPREHEND your profile, you friends' profiles or search the stats of your favorite PRO PLAYER",
+            "uptime": "99.99% uptime",
+            "uptime-description": "Active for 24/7/360, with zero downtime",
+            "users": "99k+ Users",
+            "users-description": "Trusted by over 99k+ users around the world",
+            "all-over": "All over the world",
+            "all-over-description": "Have access to LLamatracker all over the world",
+            "realtime": "Realtime today's Shop",
+            "realtime-description": "See the today's shop in realtime, totally updated"
+        }
+    },
+    "download": {
+        "download": {
+            "now-available": "Now available to download",
+            "lets-start": "Lets start & grow with us"
+        },
+        "apple": {
+            "label": "Download on the iOS App Store"
+        },
+        "android": {
+            "label": "Download on the Google Play Store"
+        }
+    },
+    "footer": {
+        "footer": {
+            "home": "Home",
+            "features": "Features",
+            "about": "About",
+            "download": "Download"
+        },
+        "features": {
+            "features": "Features",
+            "search-profile": "Search Profile",
+            "stats-details": "Stats Details",
+            "daily-shop": "Daily Shop",
+            "official-news": "Official News"
+        },
+        "support": {
+            "support": "Support",
+            "customer": "Customer Support",
+            "terms-conditions": "Terms & Conditions",
+            "privacy-policy": "Privacy Policy"
+        },
+        "rights": {
+            "rights": "All rights reserved."
+        },
+        "download": {
+            "download": "Download now from stores"
+        }
+    }
+}

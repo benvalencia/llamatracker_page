@@ -1,0 +1,101 @@
+{
+    "nav": {
+        "menu": {
+            "home": "Inici",
+            "features": "Funcionalitats",
+            "about": "Sobre",
+            "download": "Descarregar",
+            "english": "Anglès",
+            "spanish": "Espanyol",
+            "italian": "Italià",
+            "catalan": "Català",
+            "download-app": "Descarragar app"
+        }
+    },
+    "home": {
+        "home": {
+            "get-more": "Obtingues més amb",
+            "in-your-hand": "A les teves mans",
+            "stats-tools": "Dades & Recursos",
+            "keep-updated": "Sempre actualitzat",
+            "news-shop": "Notícies & Botiga"
+        }
+    },
+    "feature": {
+        "feature": {
+            "level-up": "Al següent nivell amb",
+            "get-to": "Puja al nivell següent amb aquestes funcionalitats.",
+            "search-for": "Cercador de perfils de Fortnite",
+            "search-for-description": "Pots trobar tots els perfils públics a Fortnite, encara que el compte és de Xbox, de PS, o d'EpicGames",
+            "keep-your": "Mantingues els teus cercats recents",
+            "keep-your-description": "Pots mantenir a prop les teves 5 cerques recents que hagis fet durant l'ús de Llamatracker",
+            "analyze-profiles": "Analitza perfils",
+            "analyze-profiles-description": "Trackeja el progrés de jugadors i analitza les seves estadístiques VICTORIES, KDA, K/M i més.",
+            "realtime-daily": "Rotació diària de la botiga",
+            "realtime-daily-description": "Fresc com cada dia, la botiga s'actualitza cada dia amb nous ítems",
+            "detail-item": "Informació detallada dels ítems",
+            "detail-item-description": "Pots veure tots els detalls dels ítems de la botiga d'avui, que inclou, la seva raresa, quant costa i més.",
+            "know-when": "Coneixes quan se'n va un ítem",
+            "know-when-description": "Trackeja els ítems quan són llançats o quan se'n van de la botiga i mai te'n vagis sense el teu favorit.",
+            "official-news": "Notícies oficials",
+            "official-news-description": "Estigues informat coon les notícies oficials més recent del món de FORTNITE i les seves diferents maneres de joc",
+            "read-the": "Llegeix les notícies oficials",
+            "read-the-description": "Trieu que llegir i manteniu-vos informat amb les notícies oficials."
+        }
+    },
+    "about": {
+        "about": {
+            "trusted": "Confien en nosaltres arreu del món",
+            "works-everywhere": "Llamatracker funcio a qualsevol lloc que vagis",
+            "our-vision-description": "La nostra visió per fer una aplicació eficient per ajudar la comunitat de FORTNITE a analitzar les seves estadístiques, sense PUBLICITAT o cap element intrusiu",
+            "in-llamatracker-description": "A Llamatracker, trobaràs tot el que necessites per ENTENDRE el teu perfil, el perfil dels teus amics, o buscar el perfil del teu PRO PLAYER favorit",
+            "uptime": "Actiu el 99.99%",
+            "uptime-description": "Actiu 24/7/360, amb 0 temps de caiguda",
+            "users": "Més de 99k d'usuaris",
+            "users-description": "Més de 99k d'usuaris arreu del món confien en Llamatracker",
+            "all-over": "Al voltant de tot el món",
+            "all-over-description": "Accedeix a Llamatracker al voltant de tot el món",
+            "realtime": "Rotació de la botiga en temps real",
+            "realtime-description": "Veu la rotació de la botiga en temps real, totalment actualitzada"
+        }
+    },
+    "download": {
+        "download": {
+            "now-available": "Disponible per descarregar ara",
+            "lets-start": "Comencem i creixem junts"
+        },
+        "apple": {
+            "label": "Descàrrega a l'App Store"
+        },
+        "android": {
+            "label": "Descàrrega a la botiga de Google Play"
+        }
+    },
+    "footer": {
+        "footer": {
+            "home": "Inici",
+            "features": "Funcionalitats",
+            "about": "Sobre",
+            "download": "Descàrrega"
+        },
+        "features": {
+            "features": "Funcionalitats",
+            "search-profile": "Cercador de perfils",
+            "stats-details": "Estadístiques detallades",
+            "daily-shop": "Botiga diària",
+            "official-news": "Notícies oficials"
+        },
+        "support": {
+            "support": "Suport",
+            "customer": "Atenció al client",
+            "terms-conditions": "Termes & condicions",
+            "privacy-policy": "Politiques de privadesa"
+        },
+        "rights": {
+            "rights": "Tots els drets reservats."
+        },
+        "download": {
+            "download": "Descarrega'l ara a les botigues"
+        }
+    }
+}
