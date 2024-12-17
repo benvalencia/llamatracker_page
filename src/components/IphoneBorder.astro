@@ -1,8 +1,11 @@
 ---
+import {getLangFromUrl} from "../utils/i18n/utils";
 interface Props {
 	section: 'home' | 'stats' | 'stats-detail' | 'news' | 'news-detail' | 'shop' | 'shop-detail' | 'tools' | 'user-profile' | string;
 	size: 'xs' | 's' | 'm' | 'l' | 'xl';
 }
+
+const lang: any = getLangFromUrl(Astro.url);
 
 const { 
 	section, size
@@ -20,7 +23,7 @@ const {
 	<!-- Screen Content -->
 	<div class="relative w-full h-full rounded-[22px] md:rounded-[37px] overflow-hidden flex items-center justify-center  bg-zinc-900/10">
 		<div class="iphone w-full" class:list={['iphone', `iphone-${size}`]}>
-			<div class="h-10 bg-cover w-[218px] md:w-auto h-[469px] md:h-[593px]" class:list={['iphone-14', `section-${section}`]}></div>
+			<div class="h-10 bg-cover w-[218px] md:w-auto h-[469px] md:h-[593px]" class:list={['iphone-14', `section-${section}-${lang}`]}></div>
 		</div>
 		
 		<div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 h-24 w-12 bg-zinc-600 blur-[60px]">
@@ -75,44 +78,173 @@ const {
 		border-radius: 38px;
 	}
 
-	.section-home{
+	.section-home-en{
 		background-size: contain;
-		background-image: url('/img/screens/home_screen.png');
+		background-image: url('/public/img/screens/en/home_screen.png');
 	}
-	.section-stats{
+	.section-home-es{
 		background-size: contain;
-		background-image: url('/public/img/screens/stats_screen.png');
+		background-image: url('/public/img/screens/es/home_screen.png');
 	}
-	.section-stats-detail{
+	.section-home-it{
 		background-size: contain;
-		background-image: url('/public/img/screens/stats-detail_screen.png');
+		background-image: url('/public/img/screens/it/home_screen.png');
 	}
-	.section-user-profile{
+	.section-home-ca{
 		background-size: contain;
-		background-image: url('/public/img/screens/home_screen.png');
+		background-image: url('/public/img/screens/ca/home_screen.png');
 	}
-	.section-loading{
+	
+	.section-stats-en{
 		background-size: contain;
-		background-image: url('/public/img/screens/home_screen.png');
+		background-image: url('/public/img/screens/en/stats_screen.png');
 	}
-	.section-news{
+	.section-stats-es{
 		background-size: contain;
-		background-image: url('/public/img/screens/news_screen.png');
+		background-image: url('/public/img/screens/es/stats_screen.png');
 	}
-	.section-news-detail{
+	.section-stats-it{
 		background-size: contain;
-		background-image: url('/public/img/screens/news-detail_screen.png');
+		background-image: url('/public/img/screens/it/stats_screen.png');
 	}
-	.section-shop{
+	.section-stats-ca{
 		background-size: contain;
-		background-image: url('/public/img/screens/shop_screen.png');
+		background-image: url('/public/img/screens/ca/stats_screen.png');
 	}
-	.section-shop-detail{
+	
+	.section-stats-detail-en{
 		background-size: contain;
-		background-image: url('/public/img/screens/shop-detail_screen.png');
+		background-image: url('/public/img/screens/en/stats-detail_screen.png');
 	}
-	.section-tools{
+	.section-stats-detail-es{
 		background-size: contain;
-		background-image: url('/public/img/screens/home_screen.png');
+		background-image: url('/public/img/screens/es/stats-detail_screen.png');
+	}
+	.section-stats-detail-it{
+		background-size: contain;
+		background-image: url('/public/img/screens/it/stats-detail_screen.png');
+	}
+	.section-stats-detail-ca{
+		background-size: contain;
+		background-image: url('/public/img/screens/ca/stats-detail_screen.png');
+	}
+	
+	.section-user-profile-en{
+		background-size: contain;
+		background-image: url('/public/img/screens/en/home_screen.png');
+	}
+	.section-user-profile-es{
+		background-size: contain;
+		background-image: url('/public/img/screens/es/home_screen.png');
+	}
+	.section-user-profile-it{
+		background-size: contain;
+		background-image: url('/public/img/screens/it/home_screen.png');
+	}
+	.section-user-profile-ca{
+		background-size: contain;
+		background-image: url('/public/img/screens/ca/home_screen.png');
+	}
+	
+	.section-loading-en{
+		background-size: contain;
+		background-image: url('/public/img/screens/en/home_screen.png');
+	}
+	.section-loading-es{
+		background-size: contain;
+		background-image: url('/public/img/screens/es/home_screen.png');
+	}
+	.section-loading-it{
+		background-size: contain;
+		background-image: url('/public/img/screens/it/home_screen.png');
+	}
+	.section-loading-ca{
+		background-size: contain;
+		background-image: url('/public/img/screens/ca/home_screen.png');
+	}
+	
+	.section-news-en{
+		background-size: contain;
+		background-image: url('/public/img/screens/en/news_screen.png');
+	}
+	.section-news-es{
+		background-size: contain;
+		background-image: url('/public/img/screens/es/news_screen.png');
+	}
+	.section-news-it{
+		background-size: contain;
+		background-image: url('/public/img/screens/it/news_screen.png');
+	}
+	.section-news-ca{
+		background-size: contain;
+		background-image: url('/public/img/screens/ca/news_screen.png');
+	}
+	
+	.section-news-detail-en{
+		background-size: contain;
+		background-image: url('/public/img/screens/en/news-detail_screen.png');
+	}
+	.section-news-detail-es{
+		background-size: contain;
+		background-image: url('/public/img/screens/es/news-detail_screen.png');
+	}
+	.section-news-detail-it{
+		background-size: contain;
+		background-image: url('/public/img/screens/it/news-detail_screen.png');
+	}
+	.section-news-detail-ca{
+		background-size: contain;
+		background-image: url('/public/img/screens/ca/news-detail_screen.png');
+	}
+	
+	.section-shop-en{
+		background-size: contain;
+		background-image: url('/public/img/screens/en/shop_screen.png');
+	}
+	.section-shop-es{
+		background-size: contain;
+		background-image: url('/public/img/screens/es/shop_screen.png');
+	}
+	.section-shop-it{
+		background-size: contain;
+		background-image: url('/public/img/screens/it/shop_screen.png');
+	}
+	.section-shop-ca{
+		background-size: contain;
+		background-image: url('/public/img/screens/ca/shop_screen.png');
+	}
+	
+	.section-shop-detail-en{
+		background-size: contain;
+		background-image: url('/public/img/screens/en/shop-detail_screen.png');
+	}
+	.section-shop-detail-es{
+		background-size: contain;
+		background-image: url('/public/img/screens/es/shop-detail_screen.png');
+	}
+	.section-shop-detail-it{
+		background-size: contain;
+		background-image: url('/public/img/screens/it/shop-detail_screen.png');
+	}
+	.section-shop-detail-ca{
+		background-size: contain;
+		background-image: url('/public/img/screens/ca/shop-detail_screen.png');
+	}
+	
+	.section-tools-en{
+		background-size: contain;
+		background-image: url('/public/img/screens/en/home_screen.png');
+	}
+	.section-tools-es{
+		background-size: contain;
+		background-image: url('/public/img/screens/es/home_screen.png');
+	}
+	.section-tools-it{
+		background-size: contain;
+		background-image: url('/public/img/screens/it/home_screen.png');
+	}
+	.section-tools-ca{
+		background-size: contain;
+		background-image: url('/public/img/screens/ca/home_screen.png');
 	}
 </style>

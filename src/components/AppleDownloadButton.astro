@@ -1,4 +1,5 @@
 ---
+import {getLangFromUrl, useTranslations} from "../utils/i18n/utils";
 interface Props {
     size?: string
 }
@@ -6,10 +7,13 @@ interface Props {
 const {
     size
 } = Astro.props;
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <div class="flex justify-center md:w-auto" tabindex="0">
-    <a target="_blank" aria-label="Download on the iOS App Store"
+    <a target="_blank" aria-label={t('download.apple.label')}
        class="rounded-2xl p-2 px-4 md:p-2 md:px-4 flex items-center w-40 sm:w-48 md:w-56 bg-white text-gray-900 hover:bg-gray-50"
        class:list={[`${size == 's' ? 'w-32 md:w-40' : null }`]}
        href="">

@@ -1,5 +1,6 @@
 ---
 import IphoneBorder from "./IphoneBorder.astro";
+import {getLangFromUrl, useTranslations} from "../utils/i18n/utils";
 
 interface Props {
 	feature: "home" | "stats" | "stats-detail" | "news" | "news-detail" | "shop" | "shop-detail" | "tools" | "user-profile"
@@ -12,6 +13,9 @@ const {
 	secondaryFeature,
 	section
 } = Astro.props;
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <section class="">
@@ -30,10 +34,11 @@ const {
 								</div>
 							</div>
 							<div class="ml-4">
-								<h4 class="text-lg font-medium leadi">Search for Fortnite profiles</h4>
+								<h4 class="text-lg font-medium leadi">
+									{t("feature.feature.search-for")}
+								</h4>
 								<p class="mt-2 text-md text-gray-500 max-w-lg">
-									You can find all the public profile on Fortnite,
-									Even if the account is an xbox, PS or EpicGame.
+									{t("feature.feature.search-for-description")}
 								</p>
 							</div>
 						</div>
@@ -47,10 +52,11 @@ const {
 								</div>
 							</div>
 							<div class="ml-4">
-								<h4 class="text-lg font-medium leadi">Keep your recent search</h4>
+								<h4 class="text-lg font-medium leadi">
+									{t("feature.feature.keep-your")} 
+								</h4>
 								<p class="mt-2 text-md text-gray-500 max-w-lg">
-									You can keep close your 5 recent searches that
-									you made through the use of Llamatracker.
+									{t("feature.feature.keep-your-description")}
 								</p>
 							</div>
 						</div>
@@ -69,9 +75,11 @@ const {
 								</div>
 							</div>
 							<div class="ml-4">
-								<h4 class="text-lg font-medium leadi">Analyze profiles</h4>
+								<h4 class="text-lg font-medium leadi">
+									{t("feature.feature.analyze-profiles")}
+								</h4>
 								<p class="mt-2 text-md text-gray-500 max-w-lg">
-									Track players' progress and analyze their stacks, WIN, KDA, K/M and more.
+									{t("feature.feature.analyze-profiles-description")}
 								</p>
 							</div>
 						</div>
@@ -90,9 +98,11 @@ const {
 								</div>
 							</div>
 							<div class="ml-4">
-								<h4 class="text-lg font-medium leadi">Realtime Daily Shop</h4>
+								<h4 class="text-lg font-medium leadi">
+									{t("feature.feature.realtime-daily")} 
+								</h4>
 								<p class="mt-2 text-md text-gray-500 max-w-lg">
-									Fresh as everyday, the shop get updated each day with new items.
+									{t("feature.feature.realtime-daily-description")}
 								</p>
 							</div>
 						</div>
@@ -106,10 +116,11 @@ const {
 								</div>
 							</div>
 							<div class="ml-4">
-								<h4 class="text-lg font-medium leadi">Detail item's information</h4>
+								<h4 class="text-lg font-medium leadi">
+									{t("feature.feature.detail-item")}
+								</h4>
 								<p class="mt-2 text-md text-gray-500 max-w-lg">
-									You can see all today's items details, what it includes,
-									item type, how much it costs and more.
+									{t("feature.feature.detail-item-description")}
 								</p>
 							</div>
 						</div>
@@ -123,10 +134,11 @@ const {
 								</div>
 							</div>
 							<div class="ml-4">
-								<h4 class="text-lg font-medium leadi">Know when it leaves</h4>
+								<h4 class="text-lg font-medium leadi">
+									{t("feature.feature.know-when")}
+								</h4>
 								<p class="mt-2 text-md text-gray-500 max-w-lg">
-									Track items when it was released and when it leaves the daily shop and
-									never get out without your favorite item.
+									{t("feature.feature.know-when-description")}
 								</p>
 							</div>
 						</div>
@@ -145,10 +157,11 @@ const {
 								</div>
 							</div>
 							<div class="ml-4">
-								<h4 class="text-lg font-medium leadi">Search for Fortnite profiles</h4>
+								<h4 class="text-lg font-medium leadi">
+									{t("feature.feature.search-for")}
+								</h4>
 								<p class="mt-2 text-md text-gray-500 max-w-lg">
-									You can find all the public profile on Fortnite,
-									Even if the account is an xbox, PS or EpicGame.
+									{t("feature.feature.search-for-description")}
 								</p>
 							</div>
 						</div>
@@ -162,10 +175,11 @@ const {
 								</div>
 							</div>
 							<div class="ml-4">
-								<h4 class="text-lg font-medium leadi">Keep your recent search</h4>
+								<h4 class="text-lg font-medium leadi">
+									{t("feature.feature.keep-your")}
+								</h4>
 								<p class="mt-2 text-md text-gray-500 max-w-lg">
-									You can keep close your 5 recent searches that
-									you made through the use of Llamatracker.
+									{t("feature.feature.keep-your-description")}
 								</p>
 							</div>
 						</div>
@@ -184,9 +198,11 @@ const {
 								</div>
 							</div>
 							<div class="ml-4">
-								<h4 class="text-lg font-medium leadi">Analyze profiles</h4>
+								<h4 class="text-lg font-medium leadi">
+									{t("feature.feature.analyze-profiles")}
+								</h4>
 								<p class="mt-2 text-md text-gray-500 max-w-lg">
-									Track players' progress and analyze their stacks, WIN, KDA, K/M and more.
+									{t("feature.feature.analyze-profiles-description")}
 								</p>
 							</div>
 						</div>
@@ -205,10 +221,11 @@ const {
 								</div>
 							</div>
 							<div class="ml-4">
-								<h4 class="text-lg font-medium leadi">Search for Fortnite profiles</h4>
+								<h4 class="text-lg font-medium leadi">
+									{t("feature.feature.search-for")}
+								</h4>
 								<p class="mt-2 text-md text-gray-500 max-w-lg">
-									You can find all the public profile on Fortnite,
-									Even if the account is an xbox, PS or EpicGame.
+									{t("feature.feature.search-for-description")}
 								</p>
 							</div>
 						</div>
@@ -222,10 +239,11 @@ const {
 								</div>
 							</div>
 							<div class="ml-4">
-								<h4 class="text-lg font-medium leadi">Keep your recent search</h4>
+								<h4 class="text-lg font-medium leadi">
+									{t("feature.feature.keep-your")}
+								</h4>
 								<p class="mt-2 text-md text-gray-500 max-w-lg">
-									You can keep close your 5 recent searches that
-									you made through the use of Llamatracker.
+									{t("feature.feature.keep-your-description")}
 								</p>
 							</div>
 						</div>
@@ -244,9 +262,11 @@ const {
 								</div>
 							</div>
 							<div class="ml-4">
-								<h4 class="text-lg font-medium leadi">Analyze profiles</h4>
+								<h4 class="text-lg font-medium leadi">
+									{t("feature.feature.analyze-profiles")}
+								</h4>
 								<p class="mt-2 text-md text-gray-500 max-w-lg">
-									Track players' progress and analyze their stacks, WIN, KDA, K/M and more.
+									{t("feature.feature.analyze-profiles-description")}
 								</p>
 							</div>
 						</div>

@@ -1,6 +1,8 @@
 ---
 import AppleDownloadButton from "../components/AppleDownloadButton.astro";
 import AndroidDownloadButton from "../components/AndroidDownloadButton.astro";
+import {getLangFromUrl, useTranslations} from "../utils/i18n/utils";
+
 interface Props {
     appleButton?: boolean,
     androidButton?: boolean,
@@ -10,6 +12,9 @@ const {
     appleButton,
     androidButton
 } = Astro.props;
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <section id="download" aria-label="" class="">
@@ -17,11 +22,11 @@ const {
         <div
           class="relative -mx-4 overflow-hidden px-4 py-20 sm:-mx-6 sm:px-6 md:mx-0 md:rounded-5xl md:px-16 xl:px-24 xl:py-20 xl:pb-40">
             <div class="relative mx-auto grid max-w-2xl gap-x-32 gap-y-2 text-center xl:max-w-none">
-                <p class="mt-4 text-xl font-medium tracking-tight text-white/50 md:text-2xl lg:text-4xl">Now available
-                    to download
+                <p class="mt-4 text-xl font-medium tracking-tight text-white/50 md:text-2xl lg:text-4xl">
+                    {t("download.download.now-available")}
                 </p>
                 <h4 class="text-4xl font-bold tracking-tight text-white md:text-5xl lg:text-7xl">
-                    Lets start & grow with us
+                    {t("download.download.lets-start")}
                 </h4>
                 <div class="mt-12 flex flex-wrap justify-center gap-x-6 gap-y-4">
                     {appleButton ?

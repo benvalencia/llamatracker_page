@@ -1,14 +1,14 @@
 ---
 import IphoneBorder from "../components/IphoneBorder.astro";
+import { getLangFromUrl, useTranslations } from '../utils/i18n/utils';
 
-interface Props {}
-
-const {} = Astro.props;
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 <div class="pt-20 pb-20	max-w-screen-xl mx-auto lg:py-20 md:p-5 md:m-h-screen md:content-center overflow-hidden">
     <div class="w-full z-10 md:top-20 md:relative">
         <div class="home-container-text text-center">
-            <h2 class="text-5xl font-bold	leading-none m-0">Get more with</h2>
+            <h2 class="text-5xl font-bold	leading-none m-0">{t("home.home.get-more")}</h2>
             <h1 class="text-6xl font-bold	leading-none m-0"><span class="text-gradient">Llamatracker</span></h1>
         </div>
     </div>
@@ -18,14 +18,14 @@ const {} = Astro.props;
                 <IphoneBorder section="home" size="s"></IphoneBorder>
             </div>
             <div class="home-container-text text-center	z-10 md:-right-8 relative right-3">
-                <h4 class="text-3xl font-bold	leading-none m-0">In your hand</h4>
-                <h3 class="text-4xl font-bold	leading-none m-0"><span class="text-gradient">Stats & Tools</span></h3>
+                <h4 class="text-3xl font-bold	leading-none m-0">{t("home.home.in-your-hand")}</h4>
+                <h3 class="text-4xl font-bold	leading-none m-0"><span class="text-gradient">{t("home.home.stats-tools")}</span></h3>
             </div>
         </div>
         <div class="flex items-center md:flex-row-reverse">
             <div class="home-container-text text-center	z-10 md:-left-8 relative left-3">
-                <h4 class="text-3xl font-bold	leading-none m-0">Keep updated</h4>
-                <h3 class="text-4xl font-bold	leading-none m-0"><span class="text-gradient">News & Shop</span></h3>
+                <h4 class="text-3xl font-bold	leading-none m-0">{t("home.home.keep-updated")}</h4>
+                <h3 class="text-4xl font-bold	leading-none m-0"><span class="text-gradient">{t("home.home.news-shop")}</span></h3>
             </div>
             <div class="rotate-12 w-72">
                 <IphoneBorder section="shop" size="s"></IphoneBorder>

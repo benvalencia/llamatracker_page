@@ -1,15 +1,62 @@
 ---
 import AppleDownloadButton from "./AppleDownloadButton.astro";
 import AndroidDownloadButton from "./AndroidDownloadButton.astro";
+import {getLangFromUrl, useTranslations} from "../utils/i18n/utils";
 interface Props {
 	appleButton?: boolean,
 	androidButton?: boolean
 }
+const currentLang = Astro.currentLocale || 'es';
 
 const { 
 	appleButton,
 	androidButton
 } = Astro.props;
+
+const redirectRef: any = {
+	en: {
+		home: '#home',
+		features: '#features',
+		about: '#about',
+		download: '#download',
+		searchProfile: "#search-profile",
+		statsDetail: "#stats-detail",
+		dailyShop: "#daily-shop",
+		officialNews: "#official-news",
+	},
+	es: {
+		home: '#inicio',
+		features: '#funcionalidades',
+		about: '#sobre',
+		download: '#descargar',
+		searchProfile: "#buscador-perfil",
+		statsDetail: "#estadisticas-detalladas",
+		dailyShop: "#tienda-diaria",
+		officialNews: "#noticias-oficiales",
+	},
+	it: {
+		home: '#casa',
+		features: '#funzionalita',
+		about: '#di',
+		download: '#scaricamento',
+		searchProfile: "#cerca-profilo",
+		statsDetail: "#statistiche",
+		dailyShop: "#negozio-giornaliero",
+		officialNews: "#notizie-ufficiale",
+	},
+	ca: {
+		home: '#inici',
+		features: '#funcionalitats',
+		about: '#sobre',
+		download: '#descarregar',
+		searchProfile: "#cercar-profil",
+		statsDetail: "#estadistiques",
+		dailyShop: "#botiga-diaria",
+		officialNews: "#noticies-oficials",
+	},
+}
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <footer class="w-full">
@@ -26,7 +73,9 @@ const {
 				</a>
 				
 				<div class="flex max-xl:items-center max-xl:justify-between flex-col sm:flex-row xl:flex-col">
-					<p class="text-gray-500 mb-5 text-center lg:text-left">Download now from stores</p>
+					<p class="text-gray-500 mb-5 text-center lg:text-left">
+						{t("footer.download.download")}
+					</p>
 					<div class="flex max-xl:items-center gap-2 items-baseline xl:flex-col">
 						{appleButton ?
 							<a href="javascript:;" class=" flex justify-center lg:justify-start group w-max">
@@ -47,42 +96,63 @@ const {
 				<div class="w-full  text-left col-start-1 md:col-start-2	">
 					<h4 class="text-xl text-purple-500 font-medium mb-7">Llamatracker</h4>
 					<ul class=" transition-all duration-500">
-						<li class="mb-6"><a href="#home" class="text-gray-600 hover:text-gray-300">Home</a>
+						<li class="mb-6">
+							<a href={redirectRef[lang].home} class="text-gray-600 hover:text-gray-300">
+							{t("footer.footer.home")}
+							</a>
 						</li>
-						<li class="mb-6"><a href="#feature" class=" text-gray-600 hover:text-gray-300">Feature</a>
+						<li class="mb-6"><a href={redirectRef[lang].features} class=" text-gray-600 hover:text-gray-300">
+							{t("footer.footer.features")}
+							</a>
 						</li>
-						<li class="mb-6"><a href="#about" class=" text-gray-600 hover:text-gray-300">About</a>
+						<li class="mb-6"><a href={redirectRef[lang].about} class=" text-gray-600 hover:text-gray-300">
+							{t("footer.footer.about")}
+							</a>
 						</li>
-						<li class="mb-6"><a href="#download"
-																class=" text-gray-600 hover:text-gray-300">Download</a></li>
+						<li class="mb-6"><a href={redirectRef[lang].download} class=" text-gray-600 hover:text-gray-300">
+							{t("footer.footer.download")}
+							</a></li>
 					</ul>
 				</div>
 				<!--End Col-->
 				<div class="w-full text-left hidden md:block">
-					<h4 class="text-xl text-purple-500 font-medium mb-7">Features</h4>
+					<h4 class="text-xl text-purple-500 font-medium mb-7">
+						{t("footer.features.features")}
+						</h4>
 					<ul class=" transition-all duration-500">
-						<li class="mb-6"><a href="#search-profile" class="text-gray-600 hover:text-gray-300">Search Profile</a>
+						<li class="mb-6"><a href={redirectRef[lang].searchProfile} class="text-gray-600 hover:text-gray-300">
+							{t("footer.features.search-profile")}
+							</a>
 						</li>
-						<li class="mb-6"><a href="#stats-detail" class="text-gray-600 hover:text-gray-300">Stats Details</a>
+						<li class="mb-6"><a href={redirectRef[lang].statsDetail} class="text-gray-600 hover:text-gray-300">
+							{t("footer.features.stats-details")}
+							</a>
 						</li>
-						<li class="mb-6"><a href="#daily-shop" class=" text-gray-600 hover:text-gray-300">Daily Shop</a>
+						<li class="mb-6"><a href={redirectRef[lang].dailyShop} class=" text-gray-600 hover:text-gray-300">
+							{t("footer.features.daily-shop")}
+							</a>
 						</li>
-						<li class="mb-6"><a href="#official-news" class=" text-gray-600 hover:text-gray-300">Official News</a>
+						<li class="mb-6"><a href={redirectRef[lang].officialNews} class=" text-gray-600 hover:text-gray-300">
+							{t("footer.features.official-news")}
+							</a>
 						</li>
 					</ul>
 				</div>
 				<!--End Col-->
 				<div class="w-full text-left">
-					<h4 class="text-xl text-purple-500 font-medium mb-7">Support</h4>
+					<h4 class="text-xl text-purple-500 font-medium mb-7">
+						{t("footer.support.support")}
+						</h4>
 					<ul class="transition-all duration-500">
-						<li class="mb-6"><a href="javascript:;" class="text-gray-600 hover:text-gray-300">Customer
-							Support</a></li>
-						<li class="mb-6"><a href="javascript:;"
-																class=" text-gray-600 hover:text-gray-300">License</a></li>
-						<li class="mb-6"><a href="javascript:;" class=" text-gray-600 hover:text-gray-300">Terms &
-							Conditions</a></li>
-						<li class="mb-6"><a href="javascript:;" class=" text-gray-600 hover:text-gray-300">Privacy
-							Policy</a></li>
+						<li class="mb-6"><a href="/support" class="text-gray-600 hover:text-gray-300">
+							{t("footer.support.customer")}
+							</a></li>
+						<li class="mb-6"><a href="/terms-conditions" class=" text-gray-600 hover:text-gray-300">
+							{t("footer.support.terms-conditions")}
+						</a></li>
+						<li class="mb-6"><a href="/privacy-policy" class=" text-gray-600 hover:text-gray-300">
+							{t("footer.support.privacy-policy")}
+							</a></li>
 					</ul>
 				</div>
 				<!--End Col-->
@@ -91,7 +161,7 @@ const {
 		<!--Grid-->
 		<div class="py-7 border-t border-gray-200">
 			<div class="flex items-center justify-center flex-col sm:justify-between sm:flex-row">
-				<span class="text-sm text-gray-500 ">© <a href="https://pagedone.io/">Llamatracker</a> 2025, All rights reserved.</span>
+				<span class="text-sm text-gray-500 ">© Llamatracker {t("footer.rights.rights")} </span>
 				<div class="flex mt-6 space-x-4 sm:justify-center sm:mt-0 ">
 					<!--INTAGRAM-->
 					<a href="https://www.instagram.com/llamatracker/" target="_blank"

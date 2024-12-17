@@ -1,0 +1,31 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Home from "../../layouts/Home.astro";
+import About from "../../layouts/About.astro";
+import Feature from "../../layouts/Feature.astro";
+import Download from "../../layouts/Download.astro";
+---
+
+<Layout title="Llamatracker">
+	<main>
+		<div id="inicio"></div>
+		<Home></Home>
+		<div id="funcionalidades"></div>
+		<Feature></Feature>
+		<div id="sobre"></div>
+		<About></About>
+		<div id="descargar"></div>
+		<Download appleButton={true}></Download>
+	</main>
+</Layout>
+
+<style>
+	main {
+		color: white;
+		font-size: 20px;
+		line-height: 1.6;
+	}
+	html {
+		scroll-behavior: smooth;
+	}
+</style>
