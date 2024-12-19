@@ -1,9 +1,15 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import {getLangFromUrl, useTranslations} from "../utils/i18n/utils";
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
-<Layout title="Llamatracker">
-	<main class="grid min-h-full place-items-center  px-6 py-24 sm:py-32 lg:px-8">
+<Layout 
+	title="Llamatracker - 404 Not Found"
+	description="Track your stats from your Fortnite’s account. Llamatracker is the perfect tool to never miss a thing on your performance,news and stay up to date all about Fortnite."
+>
+	<main class="grid min-h-full h-dvh place-items-center  px-6 py-24 sm:py-32 lg:px-8">
 		<div class="text-center">
 			<p class="text-3xl font-semibold text-purple-500">404</p>
 			<h1 class="mt-4 text-balance text-5xl font-semibold tracking-tight text-gray-200 sm:text-7xl">Page not found</h1>
