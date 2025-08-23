@@ -17,23 +17,46 @@ const t = useTranslations(lang);
 	<div class="max-w-screen-xl place-items-center mx-auto md:content-center flex flex-col gap-8 pt-20 pb-24">
 		<div class="w-full z-10 md:top-20 ">
 			<div class="home-container-text text-center">
-				<h2 class="text-5xl text-white font-bold	leading-none m-0">Details about the</h2>
-				<h1 class="text-6xl font-bold	leading-none m-0"><span class="text-gradient">Tournaments</span></h1>
+				<h2 class="text-5xl text-white font-bold leading-none m-0">
+				View the
+                				<br>
+			 Daily Fortnite
+				</h2>
+				<h1 class="text-6xl font-bold	leading-none m-0"><span class="text-gradient">
+				 Items Rotation</span></h1>
+				<h1 class="text-s font-bold	leading-none m-0 pt-3">
+				<span class="text-gray-600">*This app does not facilitate purchases.*
+				<br>
+				 *It only displays publicly available Fortnite information.*</span></h1>
 			</div>
 		</div>
 		<div class="flex flex-wrap pt-2 justify-between px-10">
 			<div class="flex items-center md:flex-row-reverse">
 				<div class="w-[27.05rem] flex justify-around">
-					<IpadBorder section="tournaments-detail" size="s"></IpadBorder>
+					<IphoneBorder section="shop" size="s"></IphoneBorder>
 				</div>
 			</div>
 		</div>
 	</div>
-
-	
+	<div class="image-1"></div>
+	<div class="image-2"></div>
 </LayoutInApp>
 
 <style>
+	.image-2 {
+		width: 200px;
+		height: 100px;
+		background-size: 40px;
+		background-image: url('/public/img/appstore.png');
+	}
+	.image-1 {
+		width: 250px;
+		height: 300px;
+		background-size: 40px;
+		background-image: url('/public/img/repos/repo_disegn.png');
+	}
+	
+	
 	.text-gradient {
 		background-image: var(--accent-gradient);
 		-webkit-background-clip: text;
