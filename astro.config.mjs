@@ -5,6 +5,7 @@ const LIVE_URL = 'http://www.llamatracker.net';
 // https://astro.build/config
 export default defineConfig({
   site: LIVE_URL,
+  base: '/',
   integrations: [tailwind()],
   i18n: {
     defaultLocale: 'en',
