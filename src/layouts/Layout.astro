@@ -1,12 +1,8 @@
 ---
 import Nav from "../components/Nav.astro";
 import Footer from "../components/Footer.astro";
-interface Props {
-	title: string;
-	description: string;
-}
 
-const { title, description } = Astro.props;
+const {title, description} = Astro.props;
 ---
 
 <!doctype html>
@@ -23,7 +19,6 @@ const { title, description } = Astro.props;
 		<Nav></Nav>
 		<slot></slot>
 		<Footer appleButton={true}></Footer>
-		
 	</body>
 </html>
 <style is:global>

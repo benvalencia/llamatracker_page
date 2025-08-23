@@ -1,7 +1,6 @@
 ---
 import {getLangFromUrl, useTranslations} from "../utils/i18n/utils";
-const lang = getLangFromUrl(Astro.url);
-const t = useTranslations(lang);
+const t = useTranslations(getLangFromUrl(Astro.url));
 ---
 
 <div class="dark:bg-gray-800">
