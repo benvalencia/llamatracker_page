@@ -1,1 +1,1 @@
-![Bencod WebPage](https://benvalencia.github.io/llamatracker_page/public/img/screens/web/webpage-screen.png)
+![Bencod WebPage](https://github.com/benvalencia/llamatracker_page/blob/develop/public/img/screens/web/webpage-screen.png?raw=true)
